@@ -1,9 +1,10 @@
 CXX=g++
+CFLAGS=-std=c++14
 
 all: sudoku.cpp
 
 sudoku.cpp:
-	$(CXX) $@ -o sudoku
+	$(CXX) $(CFLAGS) $@ -o sudoku
 
 .PHONY: test
 
