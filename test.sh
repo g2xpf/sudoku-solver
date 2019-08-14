@@ -1,4 +1,3 @@
 #/bin/sh
 
-
-find . -name "*.txt" -exec sh -c "cat {} | ./sudoku" \;
+find . -name "*.txt" -exec sh -c "echo {}: && cat {} | ./sudoku" \;
